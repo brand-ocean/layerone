@@ -6,7 +6,7 @@ const navbarHeight = 5 * parseFloat(getComputedStyle(document.documentElement).f
 gsap.to(eyeForTalentElem, {
     scrollTrigger: {
         trigger: "#container-hero", // Make sure to use a proper selector here
-        start: `top+=${navbarHeight}px`, // Adjusted the start position by the navbar height
+start: "top+=5rem",
         end: "bottom center", // Keep the end position as it is
         scrub: 1,
         pin: true,
