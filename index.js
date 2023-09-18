@@ -44,3 +44,4 @@ gsap.to(eyeForTalentElem, {
         scrub: 0.5,
     }
 });
+    
