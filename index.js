@@ -10,7 +10,7 @@ gsap.to(eyeForTalentElem, {
         scrub: 1,
         pin: true,
         anticipatePin: 1,
-        markers: true,
+        markers: false,
     },
     scale: 20,
     ease: "power2.out",
