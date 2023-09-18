@@ -6,7 +6,7 @@ const navbarHeight = 5 * parseFloat(getComputedStyle(document.documentElement).f
 gsap.to(eyeForTalentElem, {
     scrollTrigger: {
         trigger: "#container-hero", // Make sure to use a proper selector here
-start: "top+=5rem",
+start: "top",
         end: "bottom center", // Keep the end position as it is
         scrub: 1,
         pin: true,
@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.from(".word", {
         duration: 2,
         opacity: 0,
+        start: "top+=10rem",
         stagger: 0.5,
         ease: "elastic.out(1, 0.3)"
     });
