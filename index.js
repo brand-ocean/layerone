@@ -1,34 +1,4 @@
- gsap.registerPlugin(ScrollTrigger);
 
-// Sla het DOM-element op in een variabele voor betere prestaties en leesbaarheid
-const eyeForTalentElem = document.querySelector("#eyefortalent");
-
-// Split de tekst binnen #eyefortalent in individuele woorden
-let words = eyeForTalentElem.innerText.split(' ');
-eyeForTalentElem.innerHTML = words.map(word => `<span class="word">${word}</span> `).join('');
-
-// Verberg aanvankelijk alle woorden
-gsap.set(".word", { visibility: "hidden" });
-
-// Maak elk woord zichtbaar, één voor één met een vertraagde animatie
-gsap.to(".word", {
-  visibility: "visible",
-  stagger: 0.5,
-});
-
-        // Set up the scaling animation on scroll
-        gsap.to(eyeForTalentElem, {
-            scrollTrigger: {
-                trigger: section_hero, // Set the trigger as the element itself
-                start: "top", // Set the starting point of the animation relative to the top of the viewport
-                end: "center", // Set the ending point of the animation relative to the bottom of the viewport
-                scrub: 1, // Smooth scrubbing effect
-            },
-            scale: 5, // Scale the element to 2 times its size
-            filter: "blur(5px)", // Apply a blur filter to the element
-            color: "#ad9b8e", // Change the color to #ad9b8e
-        opacity: 0 // Change the opacity to 0
-        });
 // Sla het DOM-element op in een variabele voor betere prestaties en leesbaarheid
 const navWrapElems = document.querySelectorAll(".nav_wrap");
 
